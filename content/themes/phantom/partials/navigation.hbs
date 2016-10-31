@@ -1,0 +1,9 @@
+<div class="sidebar-nav">
+    <ul class="nav" style="list-style: none;padding: 0;margin-top: 0;">
+        <!-- Loop through the navigation items -->
+        {{#foreach navigation}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+        <!-- End the loop -->
+    </ul>
+</div>
